@@ -21,7 +21,7 @@ $(document).ready(function(){
         var value = data["response"]
 
 
-        if (value % 2 == 0) {
+        if (value <= 5) {
 
           $(target).addClass("color")
           $(target).text(value)
