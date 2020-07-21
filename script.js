@@ -20,17 +20,22 @@ $(document).ready(function(){
         var success = data["success"]
         var value = data["response"]
 
-
-        if (value <= 5) {
-
-          $(target).addClass("color")
-          $(target).text(value)
-
+        if (target.hasClass("color") || target.hasClass("color2")) {
+          
         }
         else {
-          $(target).addClass("color2")
-          $(target).text(value)
+          if (value <= 5) {
+
+            $(target).addClass("color")
+            $(target).text(value)
+
+          }
+          else {
+            $(target).addClass("color2")
+            $(target).text(value)
+          }
         }
+
       }
 
 
